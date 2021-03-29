@@ -1,8 +1,15 @@
 package com.alex.payment.backend.model;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
+
 import javax.persistence.*;
 import java.util.Set;
 
+@Data
+@NoArgsConstructor
+@ToString
 @Entity
 @Table(name = "users")
 public class User extends BaseEntity {
